@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet);
+body{ font-family: 'Roboto', sans-serif;  
+      font-size: 1rem;
+      background: url("images/background1.jpg") repeat  ;
+      
+      
+  }
+
+
+*{margin:0;
+padding:0;
+box-sizing: border-box;
+}
+ 
+ /* animation-start*/
+.im-1,.im-4,.im-7,.im-10{animation-name:a1;}
+.im-2,.im-5,.im-8,.im-11{animation-name:a2;}
+.im-3,.im-6,.im-9,.im-12{animation-name:a3;}
+
+
+.im-1,.im-2,.im-3{position:absolute;
+height:200px;
+width:16.66%;
+top:0px;
+left:0px;
+animation-duration:4s;
+animation-iteration-count: infinite;
+}
+
+
+.im-4,.im-5,.im-6{position: absolute;
+height: 200px;
+width:16.66%;
+top:0px;
+right:0px;
+animation-duration:4s;
+animation-iteration-count: infinite;
+}
+
+
+.im-7,.im-8,.im-9{position:absolute;
+height:200px;
+width:16.66%;
+top:201px;
+left:0px;
+animation-duration:4s;
+animation-iteration-count:infinite;}
+
+
+
+.im-10,.im-11,.im-12{position:absolute;
+height:200px;
+width:16.66%;
+top:201px;
+right:0px;
+animation-duration:4s;
+animation-iteration-count: infinite;}
+
+
+
+
+@keyframes a1{
+	0%{z-index: 1;}
+	50%{z-index: 2;}
+	100%{z-index:3; }
+}
+@keyframes a2{
+	0%{z-index: 2;}
+	50%{z-index: 3;}
+	100%{z-index: 1;}
+}
+@keyframes a3{
+	0%{z-index:3; }
+	50%{z-index:1; }
+	100%{ z-index: 2; }
+}
+
+
+.container{margin:0 auto 1rem; auto;
+	background:linear-gradient(90deg, #ffd89b, #19547b);
+width:66.66%;
+}
+
+
+@media(min-width: 441px){
+	.container{width: 50%;}
+	.im-1,.im-2,.im-3,.im-4,.im-5,.im-6,.im-7,.im-8,.im-9,.im-10,.im-11,.im-12{width:25%;}
+}
+
+@media(min-width:768px){
+	.container{width: 384px;}
+	img{display: none;}
+	}
+
+/* survey-form-start*/
+h1{text-align: center;
+ padding: 0.50rem;}
+
+
+ #description{padding: 0.50rem;
+ 	text-align: center;
+margin-top:0.15rem;
+	font-style: italic;
+font-weight:700;
+font-size: 0.85rem;}
+
+
+p{font-family: inherit;
+font-size: 1.4rem;
+margin-bottom: 0.5rem;}
+
+#survey-form{
+padding:0.5rem;
+margin-top: 1rem;}
+
+
+label{display:flex;
+font-size:1.4rem;
+font-weight: 500;
+margin-bottom: 0.8rem;}
+
+
+.personal-info,#dropdown{
+	display:block;
+	margin-bottom: 0.6rem;
+       border: 2px solid black;
+       width:100%;
+       border-radius:0.25rem;
+       height:2rem;
+       padding: 0.375rem 0.75rem;}
+
+
+.input-radio,.input-checkbox{ min-height: 1.25rem;
+	min-width: 1.25rem;
+	margin-right: 0.625rem;
+}
+
+
+.input-textarea{min-height: 100px;
+	width: 100%;
+	padding:0.625rem;
+	resize: vertical;
+	margin-bottom:0.6rem;
+}
+
+
+.submit-button{
+	display: block;
+	width:100%;
+	padding: 0.9rem;
+	background:#2E8B57; 
+	border-radius:2px;
+	border: none;
+	cursor: pointer;
+	font-style: inherit;
+	font-size: 1.2rem;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+	
+	
+

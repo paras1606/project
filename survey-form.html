@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>SURVEY-FORM</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="images for animation">
+	<img src="images/avengers-endgame poster.jpg" alt="action-movie-photo" class="im-1">
+<img src="images/bahubali movie poster.jpg" alt="action-movie-photo" class="im-2">
+<img src="images/attack-titan-movie poster.jpg" alt="action-movie-photo" class="im-3">
+<img src="images/bell chamber movie poster.jpg" alt="horror-movie-poster" class="im-4">
+<img src="images/it-movie poster.jpg" alt="horror-movie-poster" class="im-5">
+<img src="images/pari-poster movie poster.jpg" alt="horror-movie-poster" class="im-6">
+<img src="images/chinese-sc-fi movie poster.jpg" alt="sci-fi-Movie-poster" class="im-7">
+<img src="images/24-movie-poster.jpg" alt="sci-fi-Movie-poster" class="im-8">
+<img src="images/pacific rim poster.jpg" alt="sci-fi-Movie-poster" class="im-9">
+<img src="images/badla movie poster.jpg" alt="mystery-movie-poster" class="im-10">
+<img src="images/shutter island movie poster.jpg" alt="mystery-movie-poster" class="im-11">
+<img src="images/old boy movie poster.jpg" alt="mystery-movie-poster" class="im-12">
+</div>
+	<div class="container">
+		<header>
+	<h1 id="title">Moviebazaar<br> Survey&nbsp;Form</h1>
+	<p id="description">(Please take part in survey it will<br>help us for making awesome content in future.)</p>
+</header>
+
+	<form id="survey-form">
+		<div >
+		<section>
+		<label for="name" id="name-label">NAME</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name" class="personal-info" required>
+	</section>
+	<section>
+<label for="email" id="email-label">EMAIL</label>
+<input type="email" name="email" id="email" placeholder="Enter your email" class="personal-info" required>
+</section>
+<section>
+	<label for="number" id="number-label">AGE</label>
+	<input type="number" name="age" id="number" min="10" max="80" placeholder="AGE" class="personal-info">
+</section>
+</div>
+<div>
+	<p>Which movie industry you like the most?</p>
+	<select id="dropdown" name="movie-industry" required>
+		<option disabled selected value>Select Movie industry</option>
+		<option value="hollywood">Hollywood</option>
+		<option value="bollywood">Bollywood</option>
+		<option value="cinema of china">Cinema of China</option>
+		<option value="south-korean cinema">South Korean Cinema</option>
+		<option value="united kingdom">United Kingdown</option>
+		<option value="other">Other</option>
+	</select>
+</div>
+<div>
+<p>Do you see the rating or reviews before watching a movie?</p>
+<label><input type="radio" name="choice" value="yes" class="input-radio">Yes</label>	
+<label ><input type="radio" name="choice" value="no" class="input-radio">No</label>
+<label ><input type="radio" name="choice" value="sometime" class="input-radio">Sometime</label>
+</div>
+<div>
+	<p>Which genre you like the most?<span>(Check all that apply)</span></p>
+	<label><input type="checkbox" name="genre" value="thriller" class="input-checkbox">Thriller</label>
+	<label><input type="checkbox" name="genre" value="sci-fi" class="input-checkbox">Sci-Fi</label>
+	<label><input type="checkbox" name="genre" value="drama" class="input-checkbox">Drama</label>
+	<label><input type="checkbox" name="genre" value="fantasy" class="input-checkbox">Fantasy</label>
+	<label><input type="checkbox" name="genre" value="romance" class="input-checkbox">Romance</label>
+<label><input type="checkbox" name="genre" value="action" class="input-checkbox">Action</label>
+<label><input type="checkbox" name="genre" value="comedy" class="input-checkbox">Comedy</label>
+<label><input type="checkbox" name="genre" value="horror" class="input-checkbox">Horror</label>
+</div>
+<div>
+	<p>Write down your favorite Actor and Movie name.</p>
+	<textarea id="comments" name="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+</div>
+<div>
+	<button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
